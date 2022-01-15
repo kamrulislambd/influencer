@@ -67,6 +67,14 @@ section{
     display: inline-block;
 }
 
+div#menubar {
+  font-size: 2rem;
+  font-weight: 800;
+  border: 1px solid #ddd;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  display: none;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -289,6 +297,69 @@ a.more-btn:hover{
 /* Bonus Section CSS Starts */
 
 
+/* Contact Us CSS Start */
+.contact-title {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
+.contact-title span {
+  position: relative;
+  z-index: 1000;
+}
+.contact-title span::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0.8rem;
+  background: #3ad1d1;
+  position: absolute;
+  z-index: -1;
+  clip-path: polygon(0% 93%, 100% 75%, 100% 100%, 0% 100%);
+}
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: stretch;
+}
+.contact-form{
+  border: 1px solid #dddddd;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+}
+.contact-form h3 {
+  text-align: center;
+  font-size: 3.5rem;
+  padding-bottom: 1rem;
+}
+.contact-form input[type="text"], input[type="email"], input[type="number"], textarea{
+  display: block;
+  width: 100%;
+  padding: 1.2rem 1.7rem;
+  border: .1px solid #ddd;
+  margin-bottom: 1.3rem;
+  border-radius: .5rem;
+}
+.contact-form input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover, textarea:hover{
+  border: .1px solid var(--secondary-color);
+}
+button.submit-btn {
+  font-size: 1.7rem;
+  padding: 1.2rem 5rem;
+  background: cyan;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+button.submit-btn:hover{
+  background-color: yellowgreen;
+}
+/* Contact Us CSS End */
 
 /* Bonus Section CSS Ends */
 /* Footer Section CSS Starts */
