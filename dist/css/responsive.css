@@ -14,6 +14,13 @@
     .banner-right {
         order: 1;
     }
+    .logos-section {
+        grid-template-columns: repeat(2, 1fr);
+        align-content: space-between;
+        grid-gap: 2rem;
+    }
+
+
   }
 
 @media (max-width: 991px){

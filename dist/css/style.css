@@ -190,3 +190,19 @@ a.btn-primary span:nth-child(4){
 /* button animation */
 
 /* Banner Section CSS Ends */
+
+/* Logos Section CSS Starts */
+
+.logos-section {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 4rem 0
+}
+
+/* Logos Section CSS Ends */
