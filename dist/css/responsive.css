@@ -7,6 +7,7 @@
         grid-template-columns: 1fr;
         grid-gap: 2rem;
         justify-content: center;
+        text-align: center;
       }
     .banner-left {
         order: 2;
@@ -14,45 +15,65 @@
     .banner-right {
         order: 1;
     }
+    .banner-left .title {
+        font-size: 3.5rem;
+        line-height: 1.5;
+    }
+    .banner-left p {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+    a.btn-primary {
+        font-size: 2rem;
+        padding: 2.5rem 4.5rem;
+    }
     .logos-section {
-        grid-template-columns: repeat(2, 1fr);
-        align-content: space-between;
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
+        grid-row-gap: 3rem;
     }
     .product-section {
         grid-template-columns: 1fr;
     }
-    .product{
-        text-align: center;
+    .products .title {
+        font-size: 3rem;
     }
     .product img {
-        max-height: 350px;
-        max-width: 500px;
+        width: 100%;
+        height: auto;
         object-fit: cover;
     }
     .product-details h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        font-weight: 700;
         margin-top: 1rem;
     }
     .product-details h3 {
-        font-size: 1.9rem;
-        font-weight: 500;
+        font-size: 2.5rem;
+        font-weight: 600;
     }
     .product-details .rating i {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
     }
     .product-details span {
-        font-size: 1.5rem;
-        font-weight: 500;
+        font-size: 2rem;
+        font-weight: 600;
     }
-    
+    .product-details small {
+        font-size: 2rem;
+        font-weight: 600;
+    }
 
 
   }
 
-@media (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px){
     html{
         font-size: 50%;
     }
+    .product-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }

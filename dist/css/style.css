@@ -98,10 +98,9 @@ section{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
-  align-content: center;
   justify-content: space-between;
-  align-items: center;
-  justify-items: center;
+  align-content: center;
+  justify-items: stretch;
 }
 
 .banner-left .title {
@@ -199,10 +198,11 @@ a.btn-primary span:nth-child(4){
   align-content: center;
   justify-content: center;
   align-items: center;
-  justify-items: center;
+  justify-items: stretch;
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
-  padding: 4rem 0
+  padding: 4rem 0;
+  grid-gap: 3rem;
 }
 
 /* Logos Section CSS Ends */
@@ -213,6 +213,10 @@ a.btn-primary span:nth-child(4){
   grid-template-columns: repeat(auto-fit, minmax(31%, 1fr));
   grid-gap: 2rem;
   background: #e3f7e199;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
 }
 
 .products .title {
@@ -229,8 +233,7 @@ a.btn-primary span:nth-child(4){
 }
 
 .product img {
-  max-width: 800px;
-  max-height: 200px;
+  max-width: 100%;
   border-radius: 1rem;
   object-fit: cover;
 }
@@ -283,3 +286,47 @@ a.more-btn:hover{
 }
 
 /* Products Section CSS Ends */
+/* Bonus Section CSS Starts */
+
+
+
+/* Bonus Section CSS Ends */
+/* Footer Section CSS Starts */
+
+.footer-section{
+  background-color: var(--secondary-color);
+  padding: 5rem 0;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap: .5rem;
+}
+.footer-content h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.footer-content p {
+  font-size: 1.3rem;
+}
+
+.footer-content span {
+  margin-top: 1.7rem;
+}
+
+.footer-content span i {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 50%;
+  background: #22213C;
+  text-align: center;
+}
+
+/* Footer Section CSS Ends */
