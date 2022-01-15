@@ -1,0 +1,23 @@
+
+@media (max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+    .banner-section {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        justify-content: center;
+      }
+    .banner-left {
+        order: 2;
+    }
+    .banner-right {
+        order: 1;
+    }
+  }
+
+@media (max-width: 991px){
+    html{
+        font-size: 50%;
+    }
+}
